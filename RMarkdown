@@ -1,0 +1,11 @@
+## Install R Markdown
+https://alexd106.github.io/intro2R/install_rmarkdown.html
+
+## Install some packages on Rstudio:
+install.packages("tinytex")
+tinytex::install_tinytex()  # install TinyTeX
+install.packages("tidyverse")
+install.packages("patchwork")
+install.packages("cowplot")
+install.packages("png")
+remotes::install_github('yihui/xaringan', upgrade = TRUE)
