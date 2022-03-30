@@ -1,5 +1,5 @@
 ## Install R Markdown
-https://alexd106.github.io/intro2R/install_rmarkdown.html
+## https://alexd106.github.io/intro2R/install_rmarkdown.html
 
 ## Install some packages on Rstudio:
 install.packages("tinytex")
