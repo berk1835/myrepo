@@ -1,0 +1,35 @@
+##### How to connect GitHub repository 'myrepo' with git and local computer ('pull'), then update your changes ('push') to GitHub
+##### Make sure you have Git installed - https://gitforwindows.org/
+##### Make sure you have a GitHub repository called 'myrepo' with a README file
+##### This script amended from https://happygitwithr.com/push-pull-github.html#push-pull-github ######
+
+## Clone repo to local computer
+git clone https://github.com/berk1835/myrepo.git
+
+
+## Make this new repo your working directory, list its files, display the README
+cd myrepo
+ls
+head README.md
+git remote show origin
+
+
+## Add a line to README and verify that Git notices the change
+echo "A line I wrote on my local computer  " >> README.md
+git status
+
+
+## Stage (“add”) and commit this change and push to your remote repo on GitHub
+git add README.md
+git commit -m "A commit from my local computer"
+git push
+
+
+##  Reveal the current line ending configuration. It should state 'true'.
+git config --show-origin --get core.autocrlf
+
+
+## Confirm this on your browser GitHub 'myrepo'
+## Clean up local computer
+cd ..
+rm -rf myrepo/
